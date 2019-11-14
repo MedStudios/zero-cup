@@ -42,47 +42,46 @@
 
   <div id="fullpage">
     <div class="section active" style="background-color: darkorange;">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1 class="display-1">WST零杯参赛作品 初始化中……(ノ￣▽￣)</h1>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="display-1">WST零杯参赛作品 初始化中……(ノ￣▽￣)</h1>
           </div>
         </div>
       </div>
-      <div class="section" style="background-color: forestgreen;">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <pre style="font-size:3em; font-family: 'Consolas', Courier, monospace;" id="git"></pre>
-            </div>
+    </div>
+    <div class="section" style="background-color: forestgreen;">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <pre style="font-size:3em; font-family: 'Consolas', Courier, monospace;" id="git"></pre>
           </div>
         </div>
       </div>
-      <div class="section" style="background-color:slategray;">
-        <div class="container">
-          <div class="row">
-            <div class="col" id="vue-ex">
-              <h3>Welcome:</h3>
-              <select class="custom-select w-25" v-model="identity">
-                <option v-for="person in people" :value="person.value">{{person.name}}</option>
-              </select> 
-              <hr>
-              <div v-show="identity == 'wan'">
-                <p>Long time no see,</p>
-                <h5>Your Excellency Wan.</h5>  
-              </div>
-              <div v-show="identity == 'sun'">
-                <p>Let's very very welcome:</p>
-                <h5>Sun Yixiang.</h5>  
-              </div>
-              <div v-show="identity == 'tan'">
-                <p>Hello,</p>
-                <h5>but who is Tan?</h5>  
-              </div>
-              <br>
-              <button class="btn btn-secondary" @click="addPerson({value: 'xu', name: '徐'})">徐桑儒加入</button>
+    </div>
+    <div class="section" style="background-color:slategray;">
+      <div class="container">
+        <div class="row">
+          <div class="col" id="vue-ex">
+            <h3>Welcome:</h3>
+            <select class="custom-select w-25" v-model="identity">
+              <option v-for="person in people" :value="person.value">{{person.name}}</option>
+            </select> 
+            <hr>
+            <div v-show="identity == 'wan'">
+              <p>Long time no see,</p>
+              <h5>Your Excellency Wan.</h5>  
             </div>
+            <div v-show="identity == 'sun'">
+              <p>Let's very very welcome:</p>
+              <h5>Sun Yixiang.</h5>  
+            </div>
+            <div v-show="identity == 'tan'">
+              <p>Hello,</p>
+              <h5>but who is Tan?</h5>  
+            </div>
+            <br>
+            <button class="btn btn-secondary" @click="addPerson({value: 'xu', name: '徐'})">徐桑儒加入</button>
           </div>
         </div>
       </div>
