@@ -263,3 +263,31 @@ textarea {
   }
 }
 
+
+
+
+
+#fullpage {
+  position: absolute !important;
+  top: 0;
+}
+
+.navbar {
+  background: none;
+  z-index: 1000;
+}
+
+.navbar .navbar-brand {
+  color: #222;
+}
+
+.navbar .nav-link {
+  color: #222;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+}
+.navbar .nav-link.active, .nav .nav-link.active {
+  background-color: #222;
+  color: #fff;
+}
+
