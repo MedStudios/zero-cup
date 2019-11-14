@@ -36,9 +36,6 @@ const expectedFiles = [
   'js/',
   'js/main.js',
   'js/plugins.js',
-  'js/vendor/',
-  `js/vendor/jquery-3.4.1.min.js`,
-  `js/vendor/modernizr-3.7.1.min.js`,
 
   'LICENSE.txt',
   'robots.txt',
