@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>AI时代 | WST</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <link href="https://cdn.bootcss.com/fullPage.js/3.0.7/fullpage.min.css" rel="stylesheet">
   <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -21,90 +21,169 @@
 
 <body>
   <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <p class="browserupgrade">不支持的浏览器。快去升级。</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
-  
-  <nav class="navbar navbar-expand-lg nav-pills">
-    <a class="navbar-brand" href="#">WST</a>
-    <p class="lead">Beta版</p>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-      <h3>☰</h3>
-    </button>
-    <div class="navbar-collapse collapse" id="navbar-collapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="examples.html"><strong>实例</strong></a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html"><strong>我们</strong></a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="loading-mask"></div>
 
-  <img id="bg" src="img/1.jpg">
+  <nav class="navbar navbar-expand-lg nav-pills">
+      <a class="navbar-brand" href="#">首页</a>
+      <h3>AI时代</h3>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <h3>☰</h3>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><h4><a class="nav-link" href="history.html"><strong>简史</strong></a></h4></li>
+          <li class="nav-item"><h4><a class="nav-link" href="about.html"><strong>我们</strong></a></h4></li>
+        </ul>
+      </div>
+    </nav>
+
+  <video class="fullscreen-video" playsinline autoplay muted loop>
+    <source src="video/home.mp4" type="video/mp4">
+  </video>
+  <div class="bg-mask"></div>
   
   <div id="fullpage">
-    <div class="section active" style="background-color: darkorange;">
+
+    <div class="section active" style="background: none;">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1 class="display-1">WST零杯参赛作品 初始化中……(ノ￣▽￣)</h1>
+        <div class="row" style="margin-bottom: 15rem;">
+          <div class="col invert">
+            <h1 class="display-1 text-center font-weight-bold my-4">人工智能</h1>
+            <h3 class="display-3 text-center"><span id="subtitle"></span></h3>
           </div>
         </div>
       </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
     </div>
-    <div class="section" style="background-color: forestgreen;">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <pre style="font-size:3em; font-family: 'Consolas', Courier, monospace;" id="git"></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section" style="background-color:slategray;">
-      <div class="container">
-        <div class="row">
-          <div class="col" id="vue-ex">
-            <h3>Welcome:</h3>
-            <select class="custom-select w-25" v-model="identity">
-              <option v-for="person in people" :value="person.value">{{person.name}}</option>
-            </select> 
-            <hr>
-            <div v-show="identity == 'wan'">
-              <p>Long time no see,</p>
-              <h5>Your Excellency Wan.</h5>  
-            </div>
-            <div v-show="identity == 'sun'">
-              <p>Let's very very welcome:</p>
-              <h5>Sun Yixiang.</h5>  
-            </div>
-            <div v-show="identity == 'tan'">
-              <p>Hello,</p>
-              <h5>but who is Tan?</h5>  
-            </div>
-            <br>
-            <button class="btn btn-secondary" @click="addPerson({value: 'xu', name: '徐'})">徐桑儒加入</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <div class="section" style="background:none;">
       <div class="container-fluid">
         <div class="row">
           <div class="col">
-            
+            <div class="card-deck">
+              <div class="card">
+                <img class="card-img-top" src="img/2-1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">亦堪日理万机</h4>
+                  <p class="card-text">依靠实时全量的数据资源进行学习计算，人工智能大脑可以代替人力进行多种工作实践，全面提高生产效率和管理能力。</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a target="_blank" href="https://et.aliyun.com/brain/city">阿里云ET城市大脑</a></li>
+                  <li class="list-group-item"><a target="_blank" href="http://iv.baidu.com/">百度智能汽车</a></li>
+                  <li class="list-group-item"><a target="_blank" href="http://paper.people.com.cn/rmrbhwb/html/2017-12/11/content_1822592.htm">上海洋山港四期自动化码头</a></li>
+                  
+                </ul>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="img/2-2.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">亦堪赋诗作画</h4>
+                  <p class="card-text">通过以卷积神经网络为代表的深度学习算法，可以进行高度准确的文字、图像的风格化处理。</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a target="_blank" href="http://jiuge.thunlp.cn">清华大学九歌</a></li>
+                  <li class="list-group-item"><a target="_blank" href="https://paintschainer.preferred.tech/index_zh.html">PaintChainer 画稿上色</a></li>
+                  <li class="list-group-item"><a target="_blank" href="https://bigjpg.com/">BigJPG 智能图片放大</a></li>
+                </ul>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="img/2-3.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">亦堪博学审问</h4>
+                  <p class="card-text">利用完备而有序的知识图谱和可靠的信息分析技术，加之强大计算后台的加持，知识引擎几乎可以回答我们所有的具体问题。</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a target="_blank" href="https://www.wolframalpha.com/">Wolfram Alpha</a></li>
+                  <li class="list-group-item"><a target="_blank" href="http://chemical.ai/">Chemical.AI 化学合成路径生成</a></li>
+                  <li class="list-group-item"><a target="_blank" href="https://www.ibm.com/watson">IBM Watson</a></li>
+                </ul>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="img/2-4.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">亦堪谈笑风生</h4>
+                  <p class="card-text">通过自然语言分析处理以及建模，文字和语音的聊天和即时翻译不仅高效准确，还可以做到学习定制化。</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a target="_blank" href="https://msxiaobing.com/">微软小冰</a></li>
+                  <li class="list-group-item"><a target="_blank" href="http://fanyi.xunfei.cn">讯飞翻译机</a></li>
+                  <li class="list-group-item"><a target="_blank" href="https://xiaoai.mi.com/">小米小爱</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
     </div>
-    <div class="section" style="background-color: darkslategrey;">
-      <div class="container-fluid">
+
+    <div class="section" style="background: url(img/1.jpg);background-size: cover;">
+      <div class="container">
         <div class="row">
           <div class="col">
-            
+            <h1 class="display-4 text-center invert mt-0">体验人工<del>智障</del>智能！</h1>
+            <p class="invert">*仅供娱乐，并非真正的AI</p>
+            <div id="chatbox">
+              <div class="row">
+                <div class="col">
+                  <span class="white-bubble">简单问句就行了，用问号结尾，太复杂了我受不起😅</span>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" id="chat-sendee" placeholder="聊点啥吧~">
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button" id="btn-chat-send">发送</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
+    </div>
+
+    <div class="section" style="background: url(img/bg-application.jpg);background-size: cover;">
+      <div class="container">
+        <div class="row" style="margin-bottom: 30rem;">
+          <div class="col">
+            <h1 class="display-3 invert mb-2">物联网+大数据+人工智能</h1>
+            <h1 class="invert">创造智能生态，助力生产生活</h1>
+            <a class="btn btn-lg btn-primary mr-2" target="_blank" href="https://ai.aliyun.com/">阿里云数据智能</a>
+            <a class="btn btn-lg btn-primary ml-2" target="_blank" href="https://ai.tencent.com/">腾讯 AI Lab</a>
+          </div>
+        </div>
+      </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
+    </div>
+    
+    <div class="section" style="background: url(img/2.jpg);background-size: cover;">
+      <div class="container">
+        <div class="row" style="margin-bottom: 20rem;">
+          <div class="col">
+            <h1 class="display-3 text-center mb-2">承前启后，拥抱未来</h1>
+            <h1 class="text-center">创造智能生态，助力生产生活</h1>
+            <div class="text-center">
+              <a class="btn btn-lg btn-primary mr-2" href="history.html">AI编年史</a>
+              <a class="btn btn-lg btn-secondary mr-2" href="about.html">关于WST</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p><a href="LICENSE.txt"><img src="https://img.shields.io/github/license/MedStudios/zero-cup?style=social"></a> <a href="https://github.com/MedStudios/zero-cup"><img src="https://img.shields.io/github/forks/MedStudios/zero-cup?style=social" alt="GitHub forks"></a></p>
+              <hr>
+              <p>版权所有 © 2019 WST队@WHU</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </div>
 
@@ -113,11 +192,9 @@
   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/popper.js/1.15.0/umd/popper.min.js"></script>
   <script src="https://cdn.bootcss.com/fullPage.js/3.0.7/fullpage.min.js"></script>
-  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
   <script src="https://cdn.bootcss.com/typed.js/2.0.11/typed.min.js"></script>
   <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 
