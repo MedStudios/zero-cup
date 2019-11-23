@@ -1,0 +1,247 @@
+<!doctype html>
+<html class="no-js" lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <title>AI编年史 | WST</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <link href="https://cdn.bootcss.com/fullPage.js/3.0.7/fullpage.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">不支持的浏览器。快去升级。</p>
+  <![endif]-->
+
+  <div id="loading-mask"></div>
+
+  <nav class="navbar navbar-expand-lg nav-pills">
+    <a class="navbar-brand" href="index.html">首页</a>
+    <h3>AI时代</h3>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <h3>☰</h3>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><h4><a class="nav-link active" href="#"><strong>简史</strong></a></h4></li>
+        <li class="nav-item"><h4><a class="nav-link" href="about.html"><strong>我们</strong></a></h4></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <video class="fullscreen-video" playsinline autoplay muted loop>
+    <source src="video/eniac.webm" type="video/webm">
+    <source src="video/eniac.mp4" type="video/mp4">
+  </video>
+  <div id="bg-dartmouth" class="bg invisible" style="background: url(img/dartmouth.jpg);background-size:cover;background-position:center;"></div>
+  <div id="bg-deep-blue" class="bg invisible" style="background: url(img/deep-blue-bg.jpg);background-size:cover;background-position:center;"></div>
+  <div id="bg-whu-ai" class="bg invisible" style="background: url(img/whu-ai.jpg);background-size:cover;background-position:center;"></div>
+  <div class="bg-mask"></div>
+  
+  <div id="fullpage">
+
+    <div class="section active" style="background: none;">
+      <div class="container">
+        <div class="row" style="margin-bottom: 10rem;">
+          <div class="col invert">
+            <h1 class="display-2 my-2 reveal">人工智能今史</h1>
+            <h2 class="reveal">A Chronicle of Modern AI</h2>
+            <br><br>
+            <h1 id="subtitle" class="display-4 text-right reveal">——步步走来的AI时代</h1>
+          </div>
+        </div>
+      </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
+    </div>
+    
+    <div class="section active" style="background: url(img/turing-test.jpg);background-size: cover;">
+      <div class="bg-mask" style="background: rgba(0,0,0,0.6);"></div>
+      <div class="container">
+        <div class="row" style="margin: 5rem auto;">
+          <div class="col text-center">
+            <h1 class="display-2 invert">AI的诞生</h1>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 10rem;">
+          <div class="col-4">
+            <img class="shadow" src="img/turing.png" style="width:inherit;">
+            <br>
+            <p class="invert">艾伦·麦席森·图灵<br>(Alan Mathison Turing, 1912-1954)</p>
+          </div>
+          <div class="col-8 invert">
+            <h1 class="font-weight-light reveal my-2">1950</h1>
+            <h1 class="display-4 reveal mt-2">图灵测试</h1>
+            <p class="lead reveal">如果一台机器能够与人类展开对话（通过电传设备）而不能被辨别出其机器身份，那么称这台机器具有智能。同一年，图灵还预言会创造出具有真正智能的机器的可能性。</p>
+          </div>
+        </div>
+      </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
+    </div>
+
+    <div class="section" style="background: none;">
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <img class="shadow" src="img/dartmouth-attenders.jpg" style="width:inherit;">
+            <br>
+            <p class="invert">达特茅斯会议的部分与会者</p>
+          </div>
+          <div class="col-7 invert">
+            <h1 class="font-weight-light reveal my-2">1956</h1>
+            <h1 class="display-4 reveal mt-2">达特茅斯会议</h1>
+            <p class="lead reveal">1956年夏天，美国达特茅斯学院举行了历史上第一次人工智能研讨会，被认为是人工智能诞生的标志。会上，约翰·麦卡锡首次提出了“人工智能”这个概念，纽厄尔和西蒙则展示了编写的逻辑理论机器。</p>
+          </div>
+        </div>
+      </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
+    </div>
+      
+    <div class="section" style="background: url(img/2-gen.jpg);background-size: cover;">
+      <div class="bg-mask" style="background: rgba(0,0,0,0.75);"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="display-2 invert">AI的迅速发展</h1>
+          </div>
+        </div>
+        <div class="row" style="margin: 4rem 8rem;">
+          <div class="col invert">
+            <h1 class="font-weight-light reveal my-2 text-right">1965</h1>
+            <h1 class="display-4 reveal mt-2 text-right">专家系统</h1>
+            <p class="lead reveal text-right">E.A.费根鲍姆等人在通用问题求解系统基础上，结合化学领域的专门知识，研制了世界上第一个专家系统dendral，可以推断化学分子结构。多年来，专家系统的理论和技术不断发展，不少在功能上已达到甚至超过同领域中人类专家的水平。</p>
+          </div>
+          <div class="col-4">
+            <img class="shadow" src="img/symbolics3640.jpg" style="width:inherit;">
+          </div>
+          <div class="col-1">
+            <p class="invert">Symbolics 3640</p></div>
+        </div>
+      </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
+    </div>
+
+    <div class="section" style="background: url(img/shakey-bg.jpg);background-size: cover;background-position:center;">
+      <div class="bg-mask" style="background: rgba(0,0,0,0.75);"></div>
+      <div class="container-fluid">
+        <div class="row" style="margin: 4rem 8rem;">
+          <div class="col">
+            <img class="shadow" src="img/shakey.jpg" style="width:inherit">
+            <br>
+            <p class="invert">Shakey</p>
+          </div>
+          <div class="col invert">
+            <h1 class="font-weight-light reveal my-2">1966</h1>
+            <h1 class="display-4 reveal mt-2">Shakey 与 ELIZA</h1>
+            <p class="lead reveal">Shakey是斯坦福研究院研制的世界上第一台移动机器人。它只能解决简单的感知、运动规划和控制问题，但其成功证实了许多严肃的科学结论。而MIT的世界上第一个聊天机器人ELIZA能理解简单的自然语言，并能产生类似人类的互动。</p>
+          </div>
+          <div class="col">
+            <img class="shadow" src="img/eliza.jpg" style="width:inherit">
+            <br>
+            <p class="invert">ELIZA</p>
+          </div>
+        </div>
+      </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
+    </div>
+
+    <div class="section" style="background: none;">
+      <div class="container">
+          <div class="row" style="margin-bottom: 5rem;">
+            <div class="col text-center">
+              <h1 class="display-3 invert my-4">寒冬后的春天</h1>
+              <p class="reveal invert">70年代初，AI遭遇了瓶颈。“AI之冬”一词由经历过1974年经费削减的研究者们创造出来，而事实被他们不幸言中，专家系统的实用性仅仅局限于某些特定情景，这使得人工智能的前景逐渐暗淡；不过十几年后AI的突飞猛进证明了其持续的生命力和更加广阔的前景，AI迎来了寒冬后的春天。</p>
+            </div>
+          </div>
+        <div class="row mt-4" style="margin-bottom: 10rem;">
+          <div class="col-5">
+            <img class="shadow" src="img/deep-blue-defeat.png" style="width:inherit;">
+            <br>
+            <p class="invert">深蓝对卡斯帕罗夫比赛现场的观众</p>
+          </div>
+          <div class="col-7 invert">
+            <h1 class="font-weight-light reveal my-2">1997</h1>
+            <h1 class="display-4 reveal mt-2">深蓝计算机</h1>
+            <p class="lead reveal">深蓝计算机1996年2月进行了对世界冠军的第一场比赛，然而，卡斯帕罗夫击败了深蓝，得分为4:2。深蓝当时开始升级，并于1997年5月再次对抗卡斯帕罗夫以3.5:2.5赢得了比赛，成为历史上第一个在标准国际象棋比赛中打败卫冕世界冠军的计算机系统。</p>
+          </div>
+        </div>
+      </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
+    </div>
+
+    <div class="section" style="background: url(img/watson.jpg);background-size: cover;background-position:center;">
+      <div class="bg-mask" style="background: rgba(0,0,0,0.75);"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col invert">
+            <h1 class="font-weight-light reveal my-2">2011</h1>
+            <h1 class="display-4 reveal mt-2">IBM Watson</h1>
+            <p class="lead reveal">在3集《死亡边缘》节目中，Watson在前两轮中与对手打平，而在最后一集里，Watson打败了最高奖金得主布拉德·鲁特尔和连胜纪录保持者肯·詹宁斯。</p>
+          </div>
+        </div>
+      </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
+    </div>
+
+    <div class="section" style="background: url(img/kejie.jpg);background-size: cover;">
+      <div class="bg-mask" style="background: rgba(0,0,0,0.5);"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-5"></div>
+          <div class="col-7 invert">
+            <h1 class="font-weight-light reveal my-2 text-right">2016</h1>
+            <h1 class="display-4 reveal mt-2 text-right">AlphaGo</h1>
+            <p class="lead reveal text-right">2016年3月，AlphaGo与围棋世界冠军李世石进行围棋人机大战，以4:1的总比分获胜；2016年末2017年初，该程序在中国棋类网站上以“Master”为注册账号与围棋高手进行快棋对决，连续60局无一败绩；2017年5月，它与排名世界第一的世界围棋冠军柯洁对战，以3:0的总比分获胜。围棋界公认阿尔法围棋的棋力已经超过人类职业围棋顶尖水平，在世界职业围棋排名中，其等级分曾超过排名人类第一的棋手柯洁。</p>
+          </div>
+        </div>
+      </div>
+      <img class="arrow-down invert" src="img/arrow-down.png">
+    </div>
+
+    <div class="section" style="background: none;">
+      <div class="container">
+        <div class="row" style="margin-bottom: 10rem;">
+          <div class="col invert">
+            <h1 class="display-4 reveal my-2 text-center">2020</h1>
+            <h1 class="display-1 reveal mt-2 text-center">就是你</h1>
+            <h1 class="reveal text-center">我们将引领AI进入一个崭新的纪元。不问达成与否，只问我们去不去追求。</h1>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p><a href="LICENSE.txt"><img src="https://img.shields.io/github/license/MedStudios/zero-cup?style=social"></a> <a href="https://github.com/MedStudios/zero-cup"><img src="https://img.shields.io/github/forks/MedStudios/zero-cup?style=social" alt="GitHub forks"></a></p>
+              <hr>
+              <p>版权所有 © 2019 WST队@WHU</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.bootcss.com/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/fullPage.js/3.0.7/fullpage.min.js"></script>
+  <script src="https://cdn.bootcss.com/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/history.js"></script>
+
+</body>
+
+</html>
